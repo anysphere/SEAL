@@ -25,6 +25,8 @@ misleading warnings in Visual Studio.
 #include <stddef.h>
 #include <stdint.h>
 
+#include "blake2-namespace.h"
+
 #if defined(_MSC_VER)
 #define BLAKE2_PACKED(x) __pragma(pack(push, 1)) x __pragma(pack(pop))
 #else

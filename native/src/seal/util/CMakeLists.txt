@@ -32,6 +32,7 @@ set(SEAL_SOURCE_FILES ${SEAL_SOURCE_FILES}
 install(
     FILES
         ${CMAKE_CURRENT_LIST_DIR}/blake2.h
+        ${CMAKE_CURRENT_LIST_DIR}/blake2-namespace.h
         ${CMAKE_CURRENT_LIST_DIR}/blake2-impl.h
         ${CMAKE_CURRENT_LIST_DIR}/clang.h
         ${CMAKE_CURRENT_LIST_DIR}/clipnormal.h
