@@ -2,8 +2,8 @@
 
 FetchContent_Declare(
     zlib
-    GIT_REPOSITORY https://github.com/madler/zlib.git
-    GIT_TAG        cacf7f1d4e3d44d871b605da3b647f07d718623f # 1.2.11
+    URL https://github.com/madler/zlib/archive/refs/tags/v1.2.11.tar.gz
+    URL_HASH SHA256=629380c90a77b964d896ed37163f5c3a34f6e6d897311f1df2a7016355c45eff
 )
 FetchContent_GetProperties(zlib)
 if(NOT zlib_POPULATED)

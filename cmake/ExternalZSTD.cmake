@@ -3,8 +3,8 @@
 
 FetchContent_Declare(
     zstd
-    GIT_REPOSITORY https://github.com/facebook/zstd.git
-    GIT_TAG        b706286adbba780006a47ef92df0ad7a785666b6 # 1.4.5
+    URL https://github.com/facebook/zstd/releases/download/v1.4.5/zstd-1.4.5.tar.gz
+    URL_HASH SHA256=98e91c7c6bf162bf90e4e70fdbc41a8188b9fa8de5ad840c401198014406ce9e
 )
 FetchContent_GetProperties(zstd)
 if(NOT zstd_POPULATED)
