@@ -1,0 +1,53 @@
+load("@rules_cc//cc:defs.bzl", "cc_library")
+
+cc_library(
+    name = "seal",
+    srcs = [
+    "batchencoder.cpp",
+    "ciphertext.cpp",
+    "ckks.cpp",
+    "context.cpp",
+    "decryptor.cpp",
+    "encryptionparams.cpp",
+    "encryptor.cpp",
+    "evaluator.cpp",
+    "keygenerator.cpp",
+    "kswitchkeys.cpp",
+    "memorymanager.cpp",
+    "modulus.cpp",
+    "plaintext.cpp",
+    "randomgen.cpp",
+    "serialization.cpp",
+    "valcheck.cpp",
+    ],
+    hdrs = [
+        "batchencoder.h",
+        "ciphertext.h",
+        "ckks.h",
+        "modulus.h",
+        "context.h",
+        "decryptor.h",
+        "dynarray.h",
+        "encryptionparams.h",
+        "encryptor.h",
+        "evaluator.h",
+        "galoiskeys.h",
+        "keygenerator.h",
+        "kswitchkeys.h",
+        "memorymanager.h",
+        "plaintext.h",
+        "publickey.h",
+        "randomgen.h",
+        "randomtostd.h",
+        "relinkeys.h",
+        "seal.h",
+        "secretkey.h",
+        "serializable.h",
+        "serialization.h",
+        "valcheck.h",
+        "version.h",
+        ],
+    deps = [
+    "//native/src/seal/util"
+    ]
+)
